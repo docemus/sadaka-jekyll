@@ -31,31 +31,36 @@ my-jekyll-site/
     ├── js/                # Script JavaScript (jQuery, Bootstrap, Owl Carousel, main.js)  
     └── images/            # Immagini ed icone usate dal sito (icons, slider, causes, sponsors, ecc.)
 
---------------------------------------------------
+
+---
+
 ## Come è Stato Realizzato
 
-- **Jekyll:** Usato per generare il sito statico. Il file di configurazione (_config.yml_) consente di parametrizzare il sito (ad esempio, url e baseurl).
+- **Jekyll:** Usato per generare il sito statico. Il file di configurazione (`_config.yml`) consente di parametrizzare il sito (ad esempio, url e baseurl).
   
-- **Layout e Include:** Il layout principale (in _layouts/default.html_) include file modulari (nella cartella _includes_) per header, carousel, sezioni di contenuto, footer e modali.
+- **Layout e Include:** Il layout principale (in `_layouts/default.html`) include file modulari (nella cartella `_includes`) per header, carousel, sezioni di contenuto, footer e modali.
   
-- **Contenuti Esternalizzati:** I testi della homepage sono gestiti tramite il front matter di index.md. Ciò permette di modificare i contenuti testuali senza alterare la struttura HTML: negli include si utilizzano le variabili (es. {{ page.carousel_slide1_title }}) con un eventuale fallback tramite il filtro default.
+- **Contenuti Esternalizzati:** I testi della homepage sono gestiti tramite il front matter di `index.md`. Ciò permette di modificare i contenuti testuali senza alterare la struttura HTML: negli include si utilizzano le variabili (es. `{{ page.carousel_slide1_title }}`) con un eventuale fallback tramite il filtro `default`.
   
 - **Design Responsive:** Grazie a Bootstrap il template è responsive e si adatta sia a dispositivi mobili sia a desktop.
   
 - **Interattività:** Owl Carousel viene usato per il carosello della homepage e per la sezione sponsor, mentre il modal di donazione sfrutta il JavaScript di Bootstrap.
 
---------------------------------------------------
+---
+
 ## Configurazione per GitHub Pages
 
 Il sito è pubblicato all'indirizzo:  
-https://docemus.github.io/webtest/
+[https://docemus.github.io/webtest/](https://docemus.github.io/webtest/)
 
-Pertanto, il file _config.yml_ è configurato come segue:
+Pertanto, il file `_config.yml` è configurato come segue:
 
+```yaml
 title: "SADAKA Charity Site"  
 description: "Charity / Non-profit responsive Bootstrap Jekyll template."  
-baseurl: "/webtest"       # La sottocartella in cui è ospitato il sito  
-url: "https://docemus.github.io"      # Il dominio base
+baseurl: "/webtest"       # La sottocartella in cui è ospitato il sito  
+url: "https://docemus.github.io"      # Il dominio base
+```
 
 --------------------------------------------------
 ## Come Testare il Sito in Locale
@@ -105,6 +110,7 @@ Questo progetto è distribuito sotto la Licenza MIT.
 
 Il file index.md contiene il front matter per esternalizzare i testi di tutte le sezioni (Carousel, About Us, Home Reasons, Our Causes, Our Sponsors). Ad esempio, il front matter include variabili come:
 
+```
 layout: default  
 title: "Home"  
 
@@ -155,9 +161,4 @@ Nel corpo del file index.md, sono inclusi i seguenti include:
 {% include home_reasons.html %}  
 {% include our_causes.html %}  
 {% include our_sponsors.html %}
-
---------------------------------------------------
-Questo README fornisce una panoramica completa sul contenuto e sulla configurazione del repository, illustrando come è stato realizzato il sito, come testarlo, come effettuare il push su GitHub e come contribuire al progetto.
---------------------------------------------------
-
-Puoi personalizzare ulteriormente questo file in base alle tue esigenze.
+```
