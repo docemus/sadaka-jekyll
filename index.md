@@ -2,6 +2,8 @@
 layout: default
 title: "Home"
 
+active_nav: home
+
 # Contenuti per il Carousel
 carousel_slide1_title: "Because they need your help"
 carousel_slide1_subtitle: "Do not let them down"

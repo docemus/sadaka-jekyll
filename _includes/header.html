@@ -35,10 +35,11 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse pull-right">
             <ul class="nav navbar-nav">
-              <li><a class="is-active" href="{{ "/" | relative_url }}">HOME</a></li>
-              <li><a href="{{ "/about.html" | relative_url }}">ABOUT</a></li>
-              <li class="has-child">
-                <a href="#">CAUSES</a>
+              <li><a class="{% if page.active_nav == 'home' %}is-active{% endif %}" href="{{ '/' | relative_url }}">HOME</a></li>
+              <li><a class="{% if page.active_nav == 'about' %}is-active{% endif %}" href="{{ '/about.html' | relative_url }}">ABOUT</a></li>              
+              <!-- Altri link -->
+              <li class="has-child">                
+                <a class="{% if page.active_nav == 'causes' %}is-active{% endif %}">CAUSES</a>
                 <ul class="submenu">
                   <li class="submenu-item"><a href="{{ "/causes.html" | relative_url }}">Causes list</a></li>
                   <li class="submenu-item"><a href="{{ "/causes-single.html" | relative_url }}">Single cause</a></li>
@@ -48,7 +49,7 @@
               </li>
               <li><a href="{{ "/gallery.html" | relative_url }}">GALLERY</a></li>
               <li><a href="{{ "/contact.html" | relative_url }}">CONTACT</a></li>
-            </ul>
+            </ul>                          
           </div>
         </div>
       </div>

@@ -1,0 +1,28 @@
+<!-- _includes/our_team.html -->
+<div class="our-team animate-onscroll fadeIn">
+    <div class="container">
+      <h2 class="title-style-1">{{ page.team_section_title }} <span class="title-under"></span></h2>
+      <div class="row">
+        {% for member in page.team_members %}
+        <div class="col-md-3 col-sm-6">
+          <div class="team-member">
+            <div class="thumnail">
+              <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="cause-img">
+            </div>
+            <h4 class="member-name"><a href="#">{{ page.member.name }}</a></h4>
+            <div class="member-position">
+              {{ member.position }}
+            </div>
+            <div class="btn-holder">
+              <a href="{{ member.social.envelope }}" class="btn"><i class="fa fa-envelope"></i></a>
+              <a href="{{ member.social.facebook }}" class="btn"><i class="fa fa-facebook"></i></a>
+              <a href="{{ member.social.google }}" class="btn"><i class="fa fa-google"></i></a>
+              <a href="{{ member.social.twitter }}" class="btn"><i class="fa fa-twitter"></i></a>
+              <a href="{{ member.social.linkedin }}" class="btn"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>

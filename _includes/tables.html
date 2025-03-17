@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-md-12 fadeIn animate-onscroll">
+      <h2 class="title-style-2">Tables <span class="title-under"></span></h2>
+  
+      {% for table in page.tables %}
+        <h4>{{ table.caption }}</h4>
+        <table class="table {{ table.style }}">
+          <thead>
+            <tr>
+              {% for header in table.headers %}
+                <th>{{ header }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in table.rows %}
+              <tr>
+                {% for cell in row %}
+                  <td>{{ cell }}</td>
+                {% endfor %}
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% endfor %}
+    </div>
+  </div>
+  

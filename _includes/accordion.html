@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-md-12 fadeIn animate-onscroll">
+      <h2 class="title-style-2">Accordion <span class="title-under"></span></h2>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        {% for item in page.accordion %}
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading{{ forloop.index }}">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ forloop.index }}" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="collapse{{ forloop.index }}">
+                  {{ item.title }}
+                </a>
+              </h4>
+            </div>
+            <div id="collapse{{ forloop.index }}" class="panel-collapse collapse {% if forloop.first %}in{% endif %}" role="tabpanel" aria-labelledby="heading{{ forloop.index }}">
+              <div class="panel-body">
+                {{ item.content }}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  
