@@ -1,5 +1,9 @@
 # _config.yml
 title: "SADAKA Charity Site"
 description: "Charity / Non-profit responsive Bootstrap Jekyll template."
-baseurl: ""         # Se hai sito in una sottocartella, impostala qui (es. /mysite)
-url: "http://yourdomain.com"
+
+#baseurl: ""         # Se hai sito in una sottocartella, impostala qui (es. /mysite)
+#url: "http://yourdomain.com"
+
+baseurl: "webtest"         # Se hai sito in una sottocartella, impostala qui (es. /mysite)
+url: "https://docemus.github.io"
