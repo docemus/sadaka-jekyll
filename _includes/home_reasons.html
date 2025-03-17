@@ -1,0 +1,33 @@
+<!-- _includes/home_reasons.html -->
+<div class="section-home home-reasons">
+  <div class="container">
+    <div class="row">
+      <!-- Colonna 1: Reason 1 (We fight together) -->
+      <div class="col-md-6">
+        <div class="reasons-col animate-onscroll fadeIn">
+          <img src="{{ '/assets/images/reasons/we-fight-togother.jpg' | relative_url }}" alt="{{ page.home_reasons_reason1_title | default: 'We fight together' }}">
+          <div class="reasons-titles">
+            <h3 class="reasons-title">{{ page.home_reasons_reason1_title | default: "We fight together" }}</h3>
+            <h5 class="reason-subtitle">{{ page.home_reasons_reason1_subtitle | default: "We are humans" }}</h5>
+          </div>
+          <div class="on-hover hidden-xs">
+            <p>{{ page.home_reasons_reason1_paragraphs | default: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Default content for reason 1." }}</p>
+          </div>
+        </div>
+      </div>
+      <!-- Colonna 2: Reason 2 (We care about others) -->
+      <div class="col-md-6">
+        <div class="reasons-col animate-onscroll fadeIn">
+          <img src="{{ '/assets/images/reasons/we-care-about.jpg' | relative_url }}" alt="{{ page.home_reasons_reason2_title | default: 'We care about others' }}">
+          <div class="reasons-titles">
+            <h3 class="reasons-title">{{ page.home_reasons_reason2_title | default: "We care about others" }}</h3>
+            <h5 class="reason-subtitle">{{ page.home_reasons_reason2_subtitle | default: "We are humans" }}</h5>
+          </div>
+          <div class="on-hover hidden-xs">
+            <p>{{ page.home_reasons_reason2_paragraphs | default: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Default content for reason 2." }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

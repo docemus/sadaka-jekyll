@@ -1,0 +1,80 @@
+<!-- _includes/our_causes.html -->
+<div class="section-home our-causes animate-onscroll fadeIn">
+  <div class="container">
+    <h2 class="title-style-1">{{ page.our_causes_title | default: "Our Causes" }} <span class="title-under"></span></h2>
+    <div class="row">
+      <!-- Cause 1: Hunger and Poverty -->
+      <div class="col-md-3 col-sm-6">
+        <div class="cause">
+          <img src="{{ '/assets/images/causes/cause-hunger.jpg' | relative_url }}" alt="{{ page.our_causes_cause1_title | default: 'Hunger and Poverty' }}" class="cause-img">
+          <div class="progress cause-progress">
+            <div class="progress-bar" role="progressbar" style="width: 30%;">
+              {{ page.our_causes_cause1_progress | default: "10$ / 500$" }}
+            </div>
+          </div>
+          <h4 class="cause-title"><a href="#">{{ page.our_causes_cause1_title | default: "HUNGER AND POVERTY" }}</a></h4>
+          <div class="cause-details">
+            {{ page.our_causes_cause1_details | default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Default text for cause 1." }}
+          </div>
+          <div class="btn-holder text-center">
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal">DONATE NOW</a>
+          </div>
+        </div>
+      </div>
+      <!-- Cause 2: Education and Training -->
+      <div class="col-md-3 col-sm-6">
+        <div class="cause">
+          <img src="{{ '/assets/images/causes/cause-education.jpg' | relative_url }}" alt="{{ page.our_causes_cause2_title | default: 'Education and Training' }}" class="cause-img">
+          <div class="progress cause-progress">
+            <div class="progress-bar" role="progressbar" style="width: 60%;">
+              {{ page.our_causes_cause2_progress | default: "400$ / 700$" }}
+            </div>
+          </div>
+          <h4 class="cause-title"><a href="#">{{ page.our_causes_cause2_title | default: "EDUCATION AND TRAINING" }}</a></h4>
+          <div class="cause-details">
+            {{ page.our_causes_cause2_details | default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Default text for cause 2." }}
+          </div>
+          <div class="btn-holder text-center">
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal">DONATE NOW</a>
+          </div>
+        </div>
+      </div>
+      <!-- Cause 3: Human Rights -->
+      <div class="col-md-3 col-sm-6">
+        <div class="cause">
+          <img src="{{ '/assets/images/causes/cause-rights.jpg' | relative_url }}" alt="{{ page.our_causes_cause3_title | default: 'Human Rights' }}" class="cause-img">
+          <div class="progress cause-progress">
+            <div class="progress-bar" role="progressbar" style="width: 40%;">
+              {{ page.our_causes_cause3_progress | default: "400$ / 1000$" }}
+            </div>
+          </div>
+          <h4 class="cause-title"><a href="#">{{ page.our_causes_cause3_title | default: "HUMAN RIGHTS" }}</a></h4>
+          <div class="cause-details">
+            {{ page.our_causes_cause3_details | default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Default text for cause 3." }}
+          </div>
+          <div class="btn-holder text-center">
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal">DONATE NOW</a>
+          </div>
+        </div>
+      </div>
+      <!-- Cause 4: Arts and Culture -->
+      <div class="col-md-3 col-sm-6">
+        <div class="cause">
+          <img src="{{ '/assets/images/causes/cause-culture.jpg' | relative_url }}" alt="{{ page.our_causes_cause4_title | default: 'Arts and Culture' }}" class="cause-img">
+          <div class="progress cause-progress">
+            <div class="progress-bar" role="progressbar" style="width: 60%;">
+              {{ page.our_causes_cause4_progress | default: "400$ / 700$" }}
+            </div>
+          </div>
+          <h4 class="cause-title"><a href="#">{{ page.our_causes_cause4_title | default: "ARTS AND CULTURE" }}</a></h4>
+          <div class="cause-details">
+            {{ page.our_causes_cause4_details | default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Default text for cause 4." }}
+          </div>
+          <div class="btn-holder text-center">
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal">DONATE NOW</a>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div>
