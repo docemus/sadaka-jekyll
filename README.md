@@ -1,6 +1,6 @@
 # Sadaka 1.0 Jekyll Port
 
-Il progetto **Sadaka 1.0 Jekyll Port** rappresenta un lavoro di porting del template HTML statico **Sadaka 1.0**, originariamente sviluppato per siti di beneficenza e organizzazioni no-profit, disponibile gratuitamente su [Free CSS](https://www.free-css.com/free-css-templates/page1). L'obiettivo principale è stato quello di trasformare il template originale in una struttura compatibile con **Jekyll**, un generatore di siti statici ampiamente utilizzato per creare blog e siti web flessibili e moderni.
+Il progetto **Sadaka 1.0 Jekyll Port** rappresenta un lavoro di porting del template HTML statico **Sadaka 1.0**, originariamente sviluppato per siti di beneficenza e organizzazioni no-profit, disponibile gratuitamente su [Free CSS](https://www.free-css.com/free-css-templates/page197/sadaka-1.0). L'obiettivo principale è stato quello di trasformare il template originale in una struttura compatibile con **Jekyll**, un generatore di siti statici ampiamente utilizzato per creare blog e siti web flessibili e moderni.
 
 ## Introduzione
 
