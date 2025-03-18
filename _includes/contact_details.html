@@ -1,0 +1,24 @@
+<div class="col-md-4 col-md-offset-1 col-contact">
+    <h2 class="title-style-2"> SADAKA CONTACTS <span class="title-under"></span></h2>
+    <p>{{ page.contact_details.description | markdownify }}</p>
+    <div class="contact-items">
+      <ul class="list-unstyled contact-items-list">
+        <li class="contact-item">
+          <span class="contact-icon">
+            <i class="fa fa-map-marker"></i>
+          </span> {{ page.contact_details.address }}
+        </li>
+        <li class="contact-item">
+          <span class="contact-icon">
+            <i class="fa fa-phone"></i>
+          </span> {{ page.contact_details.phone }}
+        </li>
+        <li class="contact-item">
+          <span class="contact-icon">
+            <i class="fa fa-envelope"></i>
+          </span> {{ page.contact_details.email }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  

@@ -1,0 +1,11 @@
+<div class="row">
+    {% for item in page.gallery_items %}
+    <a href="{{ item.image_url | relative_url }}" class="col-md-3 col-sm-4 gallery-item lightbox">
+      <img src="{{ item.thumbnail_url | relative_url }}" alt="">
+      <span class="on-hover">
+        <span class="hover-caption">{{ item.caption }}</span>
+      </span>
+    </a> <!-- /.gallery-item -->
+    {% endfor %}
+  </div>
+  

@@ -47,8 +47,8 @@
                   <li class="submenu-item"><a href="{{ "/causes-single.html" | relative_url }}">Single cause</a></li>
                 </ul>
               </li>
-              <li><a href="{{ "/gallery.html" | relative_url }}">GALLERY</a></li>
-              <li><a href="{{ "/contact.html" | relative_url }}">CONTACT</a></li>
+              <li><a class="{% if page.active_nav == 'gallery' %}is-active{% endif %}" href="{{ '/gallery.html' | relative_url }}">GALLERY</a></li>        
+              <li><a class="{% if page.active_nav == 'contact' %}is-active{% endif %}" href="{{ '/contact.html' | relative_url }}">CONTACT</a></li>        
             </ul>                          
           </div>
         </div>
