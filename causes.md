@@ -20,12 +20,8 @@ our_causes_cause4_progress: "400$ / 700$"
 our_causes_cause4_details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at eros rutrum turpis viverra elementum semper quis ex. Donec lorem nulla, aliquam quis neque vel, maximus lacinia urna."
 ---
 
-<div class="page-heading text-center">
-  <div class="container zoomIn animated">
-    <h1 class="page-title">{{ page.page_heading_title }}<span class="title-under"></span></h1>
-    <p class="page-description">{{ page.page_description }}</p>
-  </div>
-</div>
+<!-- Include del Page Heading -->
+{% include page_heading.html %}
 
 <div class="main-container" style="text-align: justify;">
   <div class="container">

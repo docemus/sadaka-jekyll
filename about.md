@@ -56,12 +56,8 @@ team_members:
       linkedin: "#"
 ---
 
-<div class="page-heading text-center">
-  <div class="container zoomIn animated">
-    <h1 class="page-title">{{ page.page_heading_title }}<span class="title-under"></span></h1>
-    <p class="page-description">{{ page.page_description }}</p>
-  </div>
-</div>
+<!-- Include del Page Heading -->
+{% include page_heading.html %}
 
 <div class="main-container" style="text-align: justify;">
   <div class="container">
