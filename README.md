@@ -31,7 +31,7 @@ Prima di iniziare, assicurati di avere installato:
 
 1. Clona il repository:
    ```bash
-   git clone <URL_DEL_TUO_REPOSITORY>
+   git clone [<URL_DEL_TUO_REPOSITORY>] (https://github.com/docemus/sadaka-jekyll.git)
    cd sadaka-jekyll
    ```
 
