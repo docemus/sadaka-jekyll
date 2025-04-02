@@ -5,6 +5,6 @@ description: "Charity / Non-profit responsive Bootstrap Jekyll template."
 #baseurl: ""         # Se hai sito in una sottocartella, impostala qui (es. /mysite)
 #url: "http://yourdomain.com"
 
-baseurl: "webtest"         # Se hai sito in una sottocartella, impostala qui (es. /mysite)
+baseurl: "sadaka-jekyll"         # Se hai sito in una sottocartella, impostala qui (es. /mysite)
 url: "https://docemus.github.io"
 
